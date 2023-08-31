@@ -1,10 +1,4 @@
-"""
-    █ █ ▀ █▄▀ ▄▀█ █▀█ ▀    ▄▀█ ▀█▀ ▄▀█ █▀▄▀█ ▄▀█
-    █▀█ █ █ █ █▀█ █▀▄ █ ▄  █▀█  █  █▀█ █ ▀ █ █▀█
 
-    Copyright 2022 t.me/hikariatama
-    Licensed under the GNU GPLv3
-"""
 
 # meta pic: https://img.icons8.com/fluency/48/000000/chatbot.png
 
@@ -28,7 +22,7 @@ class HelpMod(loader.Module):
         "single_mod_header": "📼 <b>{}</b>:",
         "single_cmd": "\n▫️ <code>{}{}</code> 👉🏻 ",
         "undoc_cmd": "🦥 No docs",
-        "all_header": "👓 <b>{} mods available, {} hidden:</b>",
+        "all_header": "🐱 <b>{} mods available, {} hidden:</b>",
         "mod_tmpl": "\n{} <code>{}</code>",
         "first_cmd_tmpl": ": ( {}",
         "cmd_tmpl": " | {}",
@@ -38,20 +32,20 @@ class HelpMod(loader.Module):
         "hidden_shown": "👓 <b>{} modules hidden, {} module shown:</b>\n{}\n{}",
         "ihandler": "\n🎹 <code>{}</code> 👉🏻 ",
         "undoc_ihandler": "🦥 No docs",
-        "joined": "👩‍💼 <b>Joined the</b> <a href='https://t.me/GeekTGChat'>support chat</a>",
-        "join": "👩‍💼 <b>Join the</b> <a href='https://t.me/GeekTGChat'>support chat</a>",
+        "joined": "👩‍💼 <b>Joined the</b> <a href='https://t.me/AppleUserbotChat'>support chat</a>",
+        "join": "👩‍💼 <b>Join the</b> <a href='https://t.me/AppleUserbotChat'>support chat</a>",
     }
 
     def __init__(self):
         self.config = loader.ModuleConfig(
             "core_emoji",
-            "▪️",
+            "🔸",
             lambda: "Core module bullet",
             "geek_emoji",
-            "🕶",
+            "🐱",
             lambda: "Geek-only module bullet",
             "plain_emoji",
-            "▫️",
+            "🔹",
             lambda: "Plain module bullet",
         )
 
@@ -300,13 +294,13 @@ class HelpMod(loader.Module):
         if await self.allmodules.check_security(
             message, security.OWNER | security.SUDO
         ):
-            await self._client(JoinChannelRequest("https://t.me/GeekTGChat"))
+            await self._client(JoinChannelRequest("https://t.me/AppleUserbotChat"))
 
             try:
                 await self.inline.form(
                     self.strings("joined", message),
                     reply_markup=[
-                        [{"text": "👩‍💼 Chat", "url": "https://t.me/GeekTGChat"}]
+                        [{"text": "👩‍💼 Chat", "url": "https://t.me/AppleUserbotChat"}]
                     ],
                     ttl=10,
                     message=message,
@@ -318,7 +312,7 @@ class HelpMod(loader.Module):
                 await self.inline.form(
                     self.strings("join", message),
                     reply_markup=[
-                        [{"text": "👩‍💼 Chat", "url": "https://t.me/GeekTGChat"}]
+                        [{"text": "👩‍💼 Chat", "url": "https://t.me/AppleUserbotChat"}]
                     ],
                     ttl=10,
                     message=message,

@@ -15,7 +15,7 @@ logger = logging.getLogger(__name__)
 
 @loader.tds
 class AppleSettingsMod(loader.Module):
-    """Advanced settings for AppleUserbot"""
+    """Advanced settings for AppleUB"""
 
     strings = {
         "name": "AppleSettings",

@@ -611,10 +611,7 @@ async def amain(first, client, allclients, web, arguments):
                    (               ( /(
                    ) )   (   (    )())
                   (()/(   )  ) |((_)
-                   /((_)_((_)((_)|_((_)
-                  (_)/ __| __| __| |/ /
-                    | (_ | _|| _|  ' <
-                      ___|___|___|_|_\\
+                   /((_)_((_)((_)
 
                      • Build: {build[:7]}
                      • Version: {'.'.join(list(map(str, list(__version__))))}

@@ -18,7 +18,7 @@ class AppleSettingsMod(loader.Module):
     """Advanced settings for AppleUserbot"""
 
     strings = {
-        "name": "GeekSettings",
+        "name": "AppleSettings",
         "watchers": "👀 <b>Watchers:</b>\n\n<b>{}</b>",
         "mod404": "🚫 <b>Watcher {} not found</b>",
         "already_disabled": "👀 <b>Watcher {} is already disabled</b>",

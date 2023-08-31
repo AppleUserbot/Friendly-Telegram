@@ -14,7 +14,6 @@
 #    You should have received a copy of the GNU Affero General Public License
 #    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-#    Modded by GeekTG Team
 
 if (Test-Path "Friendly-Telegram" -PathType Container)
 {
@@ -54,7 +53,7 @@ Write-Output("Done")
 
 # https://stackoverflow.com/a/31845512
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path", "Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path", "User")
-git clone https://github.com/GeekTG/Friendly-Telegram
+git clone https://github.com/AppleUserbot/Friendly-Telegram
 
 Set-Location Friendly-Telegram
 python -m pip install -r requirements.txt

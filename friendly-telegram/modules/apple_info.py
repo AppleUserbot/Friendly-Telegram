@@ -1,10 +1,4 @@
-"""
-    █ █ ▀ █▄▀ ▄▀█ █▀█ ▀    ▄▀█ ▀█▀ ▄▀█ █▀▄▀█ ▄▀█
-    █▀█ █ █ █ █▀█ █▀▄ █ ▄  █▀█  █  █▀█ █ ▀ █ █▀█
 
-    Copyright 2022 t.me/hikariatama
-    Licensed under the GNU GPLv3
-"""
 
 # scope: inline
 
@@ -21,19 +15,19 @@ logger = logging.getLogger(__name__)
 
 
 @loader.tds
-class GeekInfoMod(loader.Module):
-    """Show userbot info (geek3.1.0alpha+)"""
+class AppleInfoMod(loader.Module):
+    """Show userbot info """
 
     strings = {
-        "name": "GeekInfo",
+        "name": "AppleInfo",
         "_custom_msg_doc": "Custom message must have {owner}, {version}, {build}, {upd}, {platform} keywords",
         "_custom_button_doc": "Custom buttons.",
         "_photo_url_doc": "You can set your own photo to geek info.",
         "default_message": (
-            "<b>🕶 GeekTG Userbot</b>\n\n"
-            "<b>🤴 Owner:</b> {owner}\n"
-            "<b>🔮 Version:</b> <i>{version}</i>\n"
-            "<b>🧱 Build:</b> {build}\n"
+            "<b>🍏 Apple Userbot</b>\n\n"
+            "<b>🐱 Owner:</b> {owner}\n"
+            "<b>🔌 Version:</b> <i>{version} stable</i>\n"
+            "<b>🏴 Build:</b> {build}\n"
             "<b>{upd}</b>\n\n"
             "<b>{platform}</b>"
         ),
@@ -56,7 +50,7 @@ class GeekInfoMod(loader.Module):
             False,
             lambda: self.strings("_custom_msg_doc"),
             "custom_buttons",
-            {"text": "🤵‍♀️ Support chat", "url": "https://t.me/GeekTGChat"},
+            {"text": "🤵‍♀️ Support chat", "url": "https://t.me/AppleUserbotChat"},
             lambda: self.strings("_custom_button_doc"),
             "photo_url",
             "https://i.imgur.com/6FKsFcM.png",

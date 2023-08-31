@@ -42,8 +42,8 @@ class UpdaterMod(loader.Module):
     strings = {
         "name": "Updater",
         "source": "ℹ️ <b>Read the source code from</b> <a href='{}'>here</a>",
-        "restarting_caption": "🔄 <b>Restarting...</b>",
-        "downloading": "🔄 <b>Downloading updates...</b>",
+        "restarting_caption": "🍏 <b>Apple is Restarting...</b>",
+        "downloading": "🍎 <b>Downloading updates...</b>",
         "downloaded": (
             "✅ <b>Downloaded successfully.\n"
             "Please type</b>"
@@ -68,7 +68,7 @@ class UpdaterMod(loader.Module):
     def __init__(self):
         self.config = loader.ModuleConfig(
             "GIT_ORIGIN_URL",
-            "https://github.com/GeekTG/Friendly-Telegram",
+            "https://github.com/AppleUserbot/Friendly-Telegram",
             lambda m: self.strings("origin_cfg_doc", m),
         )
 
@@ -120,11 +120,11 @@ class UpdaterMod(loader.Module):
                     [
                         {
                             "text": "☁️ Install to Okteto",
-                            "url": "https://cloud.okteto.com/#/deploy?repository=https://github.com/GeekTG/Friendly-Telegram",
+                            "url": "https://cloud.okteto.com/#/deploy?repository=https://github.com/AppleUserbot/Friendly-Telegram",
                         },
                         {
-                            "text": "🖥 Install to lavhost",
-                            "url": "https://t.me/lavhostbot?start=R2Vla1RH",
+                            "text": "🖥 Install to termux",
+                            "url": "https://t.me/AppleUserbotFAQ",
                         },
                     ],
                 ],
@@ -192,15 +192,15 @@ class UpdaterMod(loader.Module):
                 text=self.strings("heroku_support"),
                 message=message,
                 reply_markup=[
-                    [{"text": "🗄 Install to VPS", "url": "https://docs.geektg.tk/"}],
+                    [{"text": "🗄 Install to VPS", "url": "https://t.me/AppleUserboFAQ"}],
                     [
                         {
                             "text": "☁️ Install to Okteto",
-                            "url": "https://cloud.okteto.com/#/deploy?repository=https://github.com/GeekTG/Friendly-Telegram",
+                            "url": "https://cloud.okteto.com/#/deploy?repository=https://github.com/AppleUserbot/Friendly-Telegram",
                         },
                         {
-                            "text": "🖥 Install to lavhost",
-                            "url": "https://t.me/lavhostbot?start=R2Vla1RH",
+                            "text": "🖥 Install to termux",
+                            "url": "https://t.me/AppleUserboFAQ",
                         },
                     ],
                 ],

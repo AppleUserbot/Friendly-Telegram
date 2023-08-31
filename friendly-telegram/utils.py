@@ -57,9 +57,9 @@ def get_platform_name():
         return "☁️ Okteto"
 
     if is_termux:
-        return "📱 Termux"
+        return "📱 Local Termux"
 
-    return "📻 VDS"
+    return "🧑‍🔧 VDS"
 
 
 def get_args(message):

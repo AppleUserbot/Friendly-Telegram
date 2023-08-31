@@ -1,10 +1,4 @@
-"""
-    █ █ ▀ █▄▀ ▄▀█ █▀█ ▀    ▄▀█ ▀█▀ ▄▀█ █▀▄▀█ ▄▀█
-    █▀█ █ █ █ █▀█ █▀▄ █ ▄  █▀█  █  █▀█ █ ▀ █ █▀█
 
-    Copyright 2022 t.me/hikariatama
-    Licensed under the GNU GPLv3
-"""
 
 # meta pic: https://img.icons8.com/pastel-glyph/344/sun-glasses--v2.png
 # scope: inline
@@ -20,8 +14,8 @@ logger = logging.getLogger(__name__)
 
 
 @loader.tds
-class GeekSettingsMod(loader.Module):
-    """Advanced settings for GeekTG"""
+class AppleSettingsMod(loader.Module):
+    """Advanced settings for AppleUserbot"""
 
     strings = {
         "name": "GeekSettings",

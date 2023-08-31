@@ -1,11 +1,3 @@
-"""
-    █ █ ▀ █▄▀ ▄▀█ █▀█ ▀    ▄▀█ ▀█▀ ▄▀█ █▀▄▀█ ▄▀█
-    █▀█ █ █ █ █▀█ █▀▄ █ ▄  █▀█  █  █▀█ █ ▀ █ █▀█
-
-    Copyright 2022 t.me/hikariatama
-    Licensed under the GNU GPLv3
-"""
-
 # scope: inline_content
 
 from .. import loader, utils
@@ -31,11 +23,11 @@ blacklist = [
 
 
 @loader.tds
-class GeekConfigMod(loader.Module):
+class AppleConfigMod(loader.Module):
     """Interactive configurator for GeekTG"""
 
     strings = {
-        "name": "GeekConfig",
+        "name": "AppleConfig",
         "configure": "🎚 <b>Here you can configure your modules' configs</b>",
         "configuring_mod": "🎚 <b>Choose config option for mod</b> <code>{}</code>",
         "configuring_option": (

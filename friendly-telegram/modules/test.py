@@ -1,10 +1,4 @@
-"""
-    █ █ ▀ █▄▀ ▄▀█ █▀█ ▀    ▄▀█ ▀█▀ ▄▀█ █▀▄▀█ ▄▀█
-    █▀█ █ █ █ █▀█ █▀▄ █ ▄  █▀█  █  █▀█ █ ▀ █ █▀█
 
-    Copyright 2022 t.me/hikariatama
-    Licensed under the GNU GPLv3
-"""
 
 # scope: inline_content
 
@@ -34,10 +28,10 @@ class TestMod(loader.Module):
         "set_loglevel": "🚫 <b>Please specify verbosity as an integer or string</b>",
         "no_logs": "ℹ️ <b>You don't have any logs at verbosity {}.</b>",
         "logs_filename": "geektg-logs.txt",
-        "logs_caption": "🗞 GeekTG logs with verbosity {}",
+        "logs_caption": "🗞 AppleUserbot logs with verbosity {}",
         "suspend_invalid_time": "🚫 <b>Invalid time to suspend</b>",
         "suspended": "🥶 <b>Bot suspended for</b> <code>{}</code> <b>seconds</b>",
-        "results_ping": "⏱ <b>Ping:</b> <code>{}</code> <b>ms</b>",
+        "results_ping": "🕐 <b>Ping:</b> <code>{}</code> <b>ms</b>",
         "confidential":(
             "⚠️ <b>Log level </b><code>{}</code><b> "
             "may reveal your confidential info, be careful</b>"
@@ -227,7 +221,7 @@ class TestMod(loader.Module):
     async def pingcmd(self, message: Message) -> None:
         """Test your userbot ping"""
         start = time.perf_counter_ns()
-        message = await utils.answer(message, "<code>Ping checking...</code>")
+        message = await utils.answer(message, "<code>Checking your ping...</code>")
         end = time.perf_counter_ns()
 
         if isinstance(message, (list, tuple, set)):

@@ -1,9 +1,4 @@
-"""
-    █ █ ▀ █▄▀ ▄▀█ █▀█ ▀    ▄▀█ ▀█▀ ▄▀█ █▀▄▀█ ▄▀█
-    █▀█ █ █ █ █▀█ █▀▄ █ ▄  █▀█  █  █▀█ █ ▀ █ █▀█
-    Copyright 2022 t.me/hikariatama
-    Licensed under the GNU GPLv3
-"""
+
 
 # meta pic: https://img.icons8.com/stickers/100/000000/enter-pin.png
 # scope: inline
@@ -41,11 +36,11 @@ def chunks(lst: list, n: int) -> List[list]:
 
 
 @loader.tds
-class GeekSecurityMod(loader.Module):
-    """Control security settings (geek3.0.8alpha+)"""
+class AppleSecurityMod(loader.Module):
+    """Control security settings """
 
     strings = {
-        "name": "GeekSecurity",
+        "name": "AppleSecurity",
         "no_command": "🚫 <b>Command </b><code>{}</code><b> not found!</b>",
         "permissions": "🔐 <b>Here you can configure permissions for </b><code>{}{}</code>",
         "close_menu": "🙈 Close this menu",
